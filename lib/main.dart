@@ -9,9 +9,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        appBarTheme: AppBarTheme(
-          backgroundColor: Colors.pink[900],
-        )
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xff082032),
+          titleTextStyle: TextStyle(color: Color(0xffFFC300)),
+          centerTitle: true,
+        ),
+        scaffoldBackgroundColor: const Color(0xff334756),
       ),
       home: const MyHomePage(),
     );
@@ -27,10 +30,95 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('naura'),
+        title: const Text('Rubic\u2032s Cube Algorithms', style: TextStyle(fontSize: 20.0),),
       ),
-      body: const Center(
-        child: Text('easy'),
+      body: ListView(
+        children: [
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(size: 56.0),
+              title: const Text('3x3x3'),
+              subtitle: const Text('Beginers tutorial'),
+              trailing: const Icon(Icons.arrow_right_alt_rounded),
+              tileColor: Colors.blueAccent,
+              onTap: () {
+                print('siemano test');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(size: 56.0),
+              title: const Text('3x3x3'),
+              subtitle: const Text('Speedcubing Guide - F2L, OLL and PLL'),
+              trailing: const Icon(Icons.account_balance),
+              tileColor: Colors.blueAccent,
+              onTap: () {
+                print('siemano test 2137');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(size: 56.0),
+              title: const Text('2x2x2'),
+              subtitle: const Text('Beginers tutorial'),
+              trailing: const Icon(Icons.account_balance),
+              tileColor: Colors.blueAccent,
+              onTap: () {
+                print('siemano test 2137');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(size: 56.0),
+              title: const Text('2x2x2'),
+              subtitle: const Text('Ortega method'),
+              trailing: const Icon(Icons.account_balance),
+              tileColor: Colors.blueAccent,
+              onTap: () {
+                print('siemano test 2137');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(size: 56.0),
+              title: const Text('3x3x3'),
+              subtitle: const Text('Next essunia'),
+              trailing: const Icon(Icons.account_balance),
+              tileColor: Colors.blueAccent,
+              onTap: () {
+                print('siemano test 2137');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(size: 56.0),
+              title: const Text('3x3x3'),
+              subtitle: const Text('Next essunia'),
+              trailing: const Icon(Icons.account_balance),
+              tileColor: Colors.blueAccent,
+              onTap: () {
+                print('siemano test 2137');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(size: 56.0),
+              title: const Text('3x3x3'),
+              subtitle: const Text('Next essunia'),
+              trailing: const Icon(Icons.account_balance),
+              tileColor: Colors.blueAccent,
+              onTap: () {
+                print('siemano test 2137');
+              },
+            ),
+          ),
+        ],
       ),
     );
   }
