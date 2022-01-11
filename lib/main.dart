@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rubics_cube_algorithms/screens/three_beginers.dart';
 
 void main() => runApp(const MyApp());
 
@@ -42,7 +43,7 @@ class MyHomePage extends StatelessWidget {
               trailing: const Icon(Icons.arrow_right_alt_rounded),
               tileColor: Colors.blueAccent,
               onTap: () {
-                print('siemano test');
+                Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => const TestLetsgo(),));
               },
             ),
           ),
@@ -85,7 +86,7 @@ class MyHomePage extends StatelessWidget {
           Card(
             child: ListTile(
               leading: const FlutterLogo(size: 56.0),
-              title: const Text('3x3x3'),
+              title: const Text('1'),
               subtitle: const Text('Next essunia'),
               trailing: const Icon(Icons.account_balance),
               tileColor: Colors.blueAccent,
@@ -97,7 +98,7 @@ class MyHomePage extends StatelessWidget {
           Card(
             child: ListTile(
               leading: const FlutterLogo(size: 56.0),
-              title: const Text('3x3x3'),
+              title: const Text('2'),
               subtitle: const Text('Next essunia'),
               trailing: const Icon(Icons.account_balance),
               tileColor: Colors.blueAccent,
@@ -109,7 +110,43 @@ class MyHomePage extends StatelessWidget {
           Card(
             child: ListTile(
               leading: const FlutterLogo(size: 56.0),
-              title: const Text('3x3x3'),
+              title: const Text('3'),
+              subtitle: const Text('Next essunia'),
+              trailing: const Icon(Icons.account_balance),
+              tileColor: Colors.blueAccent,
+              onTap: () {
+                print('siemano test 2137');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(size: 56.0),
+              title: const Text('4'),
+              subtitle: const Text('Next essunia'),
+              trailing: const Icon(Icons.account_balance),
+              tileColor: Colors.blueAccent,
+              onTap: () {
+                print('siemano test 2137');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(size: 56.0),
+              title: const Text('5'),
+              subtitle: const Text('Next essunia'),
+              trailing: const Icon(Icons.account_balance),
+              tileColor: Colors.blueAccent,
+              onTap: () {
+                print('siemano test 2137');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(size: 56.0),
+              title: const Text('6'),
               subtitle: const Text('Next essunia'),
               trailing: const Icon(Icons.account_balance),
               tileColor: Colors.blueAccent,
@@ -123,3 +160,5 @@ class MyHomePage extends StatelessWidget {
     );
   }
 }
+
+
