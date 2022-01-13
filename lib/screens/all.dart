@@ -1,4 +1,3 @@
-export 'five_tutorial.dart';
 export 'four_tutorial.dart';
 export 'megaminx_tutorial.dart';
 export 'pyraminx_tutorial.dart';

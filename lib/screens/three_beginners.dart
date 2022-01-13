@@ -12,16 +12,16 @@ class _ThreeBeginnersScreenState extends State<ThreeBeginnersScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Rubic\u2032s Cube Algorithms', style: TextStyle(fontSize: 20.0),),
+        title: const Text('3x3x3 Beginners tutorial', style: TextStyle(fontSize: 20.0),),
       ),
       body: ListView(
         children: [
           Card(
             child: ListTile(
-              title: const Text('Basic moves', style: TextStyle(color: Color(0xffFF4C29)),),
-              subtitle: const Text('Learn Rubic\u2032s Cube moves', style: TextStyle(color: Color(0xffFF4C29)),),
-              trailing: const Icon(Icons.api, color: Color(0xffFF4C29),),
-              tileColor: const Color(0xff2C394B),
+              title: const Text('Basic moves', style: TextStyle(color: Color(0xFFE5E5E5)),),
+              subtitle: const Text('Learn Rubic\u2032s Cube moves', style: TextStyle(color: Color(0xFFE5E5E5)),),
+              trailing: const Icon(Icons.api, color: Color(0xFFFCA311),),
+              tileColor: const Color(0xFF14213D),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => const BasicMoves(),));
               },
@@ -29,24 +29,24 @@ class _ThreeBeginnersScreenState extends State<ThreeBeginnersScreen> {
           ),
           const Card(
             child: ListTile(
-              title: Text('Solve the white edges', style: TextStyle(color: Color(0xffE9A6A6)),),
-              subtitle: Text('Match white edges with colored ones so that a cross is formed', style: TextStyle(color: Color(0xffE9A6A6)),),
-              tileColor: Color(0xff1F1D36),
+              title: Text('Solve the white edges', style: TextStyle(color: Color(0xFFE5E5E5)),),
+              subtitle: Text('Match white edges with colored ones so that a cross is formed', style: TextStyle(color: Color(0xFFE5E5E5)),),
+              tileColor: Color(0xFF14213D),
             ),
           ),
           const Card(
             child: ListTile(
-              title: Text('Solve the white corners', style: TextStyle(color: Color(0xffF4DFBA)),),
-              subtitle: Text('Try to match all corners with white color using R U R\u2032 U\u2032', style: TextStyle(color: Color(0xffF4DFBA)),),
-              tileColor: Color(0xff876445),
+              title: Text('Solve the white corners', style: TextStyle(color: Color(0xFFE5E5E5)),),
+              subtitle: Text('Try to match all corners with white color using R U R\u2032 U\u2032', style: TextStyle(color: Color(0xFFE5E5E5)),),
+              tileColor: Color(0xFF14213D),
             ),
           ),
           Card(
             child: ListTile(
-              title: const Text('Solve second layer', style: TextStyle(color: Color(0xff607380)),),
-              subtitle: const Text('Learn how to solve second layer with two algorithms', style: TextStyle(color: Color(0xff607380)),),
-              trailing: const Icon(Icons.arrow_right_alt_rounded),
-              tileColor:const Color(0xffD3DEDC),
+              title: const Text('Solve second layer', style: TextStyle(color: Color(0xFFE5E5E5)),),
+              subtitle: const Text('Learn how to solve second layer with two algorithms', style: TextStyle(color: Color(0xFFE5E5E5)),),
+              trailing: const Icon(Icons.arrow_right_alt_rounded, color: Color(0xFFFCA311),),
+              tileColor:const Color(0xFF14213D),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => const ThreeBeginnersSecondLayer(),));
               },
@@ -54,10 +54,10 @@ class _ThreeBeginnersScreenState extends State<ThreeBeginnersScreen> {
           ),
           Card(
             child: ListTile(
-              title: const Text('Solve last layer', style: TextStyle(color: Colors.amber),),
-              subtitle: const Text('Learn how to solve last layer', style: TextStyle(color: Colors.amber),),
-              trailing: const Icon(Icons.arrow_right_alt_rounded, color: Colors.amber),
-              tileColor: Colors.blue[900],
+              title: const Text('Solve last layer', style: TextStyle(color: Color(0xFFE5E5E5)),),
+              subtitle: const Text('Learn how to solve last layer', style: TextStyle(color: Color(0xFFE5E5E5)),),
+              trailing: const Icon(Icons.arrow_right_alt_rounded, color: Color(0xFFFCA311),),
+              tileColor: const Color(0xFF14213D),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => const ThreeBeginnersLastLayer(),));
               },
