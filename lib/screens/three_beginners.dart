@@ -18,7 +18,7 @@ class _ThreeBeginnersScreenState extends State<ThreeBeginnersScreen> {
         children: [
           Card(
             child: ListTile(
-              title: const Text('Basic moves', style: TextStyle(color: Color(0xFFE5E5E5)),),
+              title: const Text('Notation', style: TextStyle(color: Color(0xFFE5E5E5)),),
               subtitle: const Text('Learn Rubic\u2032s Cube moves', style: TextStyle(color: Color(0xFFE5E5E5)),),
               trailing: const Icon(Icons.api, color: Color(0xFFFCA311),),
               tileColor: const Color(0xFF14213D),

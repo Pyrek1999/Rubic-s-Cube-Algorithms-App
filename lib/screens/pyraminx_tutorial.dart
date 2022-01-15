@@ -12,10 +12,33 @@ class _PyraminxScreenState extends State<PyraminxScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Test Screen', style: TextStyle(fontSize: 20.0),),
+        title: const Text('Pyraminx Tutorial', style: TextStyle(fontSize: 20.0),),
       ),
-      body: const Center(
-        child: Text('TEST', style: TextStyle(fontSize: 72.0, color: Colors.amber,)),
+      body: ListView(
+        children: [
+          Card(
+            child: ListTile(
+              title: const Text('Notation', style: TextStyle(color: Color(0xFFE5E5E5)),),
+              subtitle: const Text('Learn moves on pyraminx', style: TextStyle(color: Color(0xFFE5E5E5)),),
+              trailing: const Icon(Icons.api, color: Color(0xFFFCA311),),
+              tileColor: const Color(0xFF14213D),
+              onTap: () {
+                return;
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: const Text('Beginner Pyraminx Method', style: TextStyle(color: Color(0xFFE5E5E5)),),
+              subtitle: const Text('Solve pyraminx using alhorithms', style: TextStyle(color: Color(0xFFE5E5E5)),),
+              trailing: const Icon(Icons.arrow_right_alt_rounded, color: Color(0xFFFCA311),),
+              tileColor: const Color(0xFF14213D),
+              onTap: () {
+                return;
+              },
+            ),
+          ),
+        ],
       ),
     );
   }
