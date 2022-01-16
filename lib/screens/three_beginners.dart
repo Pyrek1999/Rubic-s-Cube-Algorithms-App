@@ -20,16 +20,7 @@ class _ThreeBeginnersScreenState extends State<ThreeBeginnersScreen> {
             child: ListTile(
               title: const Text('Notation', style: TextStyle(color: Color(0xFFE5E5E5)),),
               subtitle: const Text('Learn Rubic\u2032s Cube moves', style: TextStyle(color: Color(0xFFE5E5E5)),),
-              trailing: const Icon(Icons.api, color: Color(0xFFFCA311),),
-              leading: ConstrainedBox(
-                constraints: const BoxConstraints(
-                  minWidth: 44,
-                  minHeight: 44,
-                  maxWidth: 44,
-                  maxHeight: 44,
-                ),
-                child: Image.asset('assets/3images/3beginner.png', fit: BoxFit.contain),
-              ),
+              trailing: const Icon(Icons.api, color: Color(0xFFFCA311)),
               tileColor: const Color(0xFF14213D),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => const BasicMoves(),));
@@ -93,39 +84,210 @@ class _BasicMovesState extends State<BasicMoves> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Test Screen', style: TextStyle(fontSize: 20.0),),
+        title: const Text('Notation', style: TextStyle(fontSize: 20.0),),
       ),
       body: LayoutBuilder(
-        builder:  (BuildContext context, BoxConstraints viewportConstraints) {
+        builder: (BuildContext context, BoxConstraints viewportConstraints) {
           return SingleChildScrollView(
             child: ConstrainedBox(
-              constraints:
+              constraints: 
                 BoxConstraints(minHeight: viewportConstraints.maxHeight),
-              child: Column(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
-                    child: Image.asset('assets/3images/3beginner.png'),
-                  ),
-                  Container(
-                    padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
-                    child: const Text('U R U\u2032', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 70.0)),
-                  ),
-                  Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Image.asset('assets/3images/3beginner.png', height: 200, width: 200,),
-                      ),
-                      Image.asset('assets/3images/3beginner.png', height: 200, width: 200,),
-                    ],
-                  ),
-                ]
-              ),
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment : CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3fav.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('Start position', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_r.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 10.0),
+                      child: Text('R', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_2r.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('R\u00b2', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_rprim.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('R\u2032', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_u.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('U', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_u2.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('U\u00b2', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_uprim.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('U\u2032', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_f.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('F', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_l.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('L', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_d.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('D', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_b.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('B', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_s.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('S', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_e.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('E', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_m.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('M', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_x.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('x', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_y.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('y', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_z.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('z', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_smallf.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('f', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_smallu.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('u', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_smallr.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('r', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_smalll.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('l', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_smalld.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('d', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3notation/3notation_smallb.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('b', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                  ],
+                ),
+              ),         
             ),
           );
         },
-      )
+      ),
     );
   }
 }
@@ -144,10 +306,41 @@ class _ThreeBeginnersSecondLayerState extends State<ThreeBeginnersSecondLayer> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Test Screen', style: TextStyle(fontSize: 20.0),),
+        title: const Text('Second Layer', style: TextStyle(fontSize: 20.0),),
       ),
-      body: const Center(
-        child: Text('TEST', style: TextStyle(fontSize: 72.0, color: Colors.amber,)),
+      body: LayoutBuilder(
+        builder: (BuildContext context, BoxConstraints viewportConstraints) {
+          return SingleChildScrollView(
+            child: ConstrainedBox(
+              constraints: 
+                BoxConstraints(minHeight: viewportConstraints.maxHeight),
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment : CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3beginner_tutorial/3beginner.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 10.0),
+                      child: Text('U R U\u2032 R\u2032 U\u2032 F\u2032 U F', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3beginner_tutorial/3beginner2.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('U\u2032 F\u2032 U F U R U\u2032 R\u2032', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                  ],
+                ),
+              ),         
+            ),
+          );
+        },
       ),
     );
   }
@@ -167,10 +360,81 @@ class _ThreeBeginnersLastLayerState extends State<ThreeBeginnersLastLayer> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Test Screen', style: TextStyle(fontSize: 20.0),),
+        title: const Text('Top Layer', style: TextStyle(fontSize: 20.0),),
       ),
-      body: const Center(
-        child: Text('TEST', style: TextStyle(fontSize: 72.0, color: Colors.amber,)),
+      body: LayoutBuilder(
+        builder: (BuildContext context, BoxConstraints viewportConstraints) {
+          return SingleChildScrollView(
+            child: ConstrainedBox(
+              constraints: 
+                BoxConstraints(minHeight: viewportConstraints.maxHeight),
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment : CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3beginner_tutorial/3beginner3.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 10.0),
+                      child: Text('F U R U\u2032 R\u2032 F\u2032', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3beginner_tutorial/3beginner4.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('F R U R\u2032 U\u2032 F\u2032', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(40.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3beginner_tutorial/3beginner5.png', height: 325, width: 325,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('R U R\u2032 U R U\u00b2 R\u2032 U\u00b2', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(40.0, 20.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3beginner_tutorial/3beginner6.png', height: 325, width: 325,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+                      child: Text('R\u2032 U\u2032 R U\u2032 R\u2032 U\u00b2 R U\u00b2', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3beginner_tutorial/3beginner7.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 10.0),
+                      child: Text('R U R\u2032 U\u2032 R\u2032 F R\u00b2 U\u2032 R\u2032 U\u2032 R U R\u2032 F\u2032', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0), textAlign: TextAlign.center,),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3beginner_tutorial/3beginner8.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 10.0),
+                      child: Text('R\u00b2 U F B\u2032 R\u00b2 F\u2032 B U R\u00b2', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 10.0),
+                      child: Image.asset('assets/3images/3beginner_tutorial/3beginner9.png', height: 300, width: 300,),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 10.0),
+                      child: Text('R\u00b2 U\u2032 F B\u2032 R\u00b2 F\u2032 B U\u2032 R\u00b2', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0), textAlign: TextAlign.center,),
+                    ),
+                  ],
+                ),
+              ),         
+            ),
+          );
+        },
       ),
     );
   }

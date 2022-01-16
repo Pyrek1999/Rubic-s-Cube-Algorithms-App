@@ -71,7 +71,15 @@ class MyHomePage extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(2.0, 1.0, 2.0, 1.0),
               child: Card(
                 child: ListTile(
-                  leading: const FlutterLogo(size: 56.0),
+                  leading: ConstrainedBox(
+                    constraints: const BoxConstraints(
+                      minWidth: 52,
+                      minHeight: 52,
+                      maxWidth: 52,
+                      maxHeight: 52,
+                    ),
+                    child: Image.asset('assets/3images/3fav.png', fit: BoxFit.contain),
+                  ),
                   title: const Text('3x3x3', style: TextStyle(color: Color(0xFFE5E5E5)),),
                   subtitle: const Text('Beginners tutorial', style: TextStyle(color: Color(0xFFE5E5E5)),),
                   trailing: const Icon(Icons.arrow_right_alt_rounded, color: Color(0xFFFCA311)),
@@ -86,7 +94,15 @@ class MyHomePage extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(2.0, 1.0, 2.0, 1.0),
               child: Card(
                 child: ListTile(
-                  leading: const FlutterLogo(size: 56.0),
+                  leading: ConstrainedBox(
+                    constraints: const BoxConstraints(
+                      minWidth: 52,
+                      minHeight: 52,
+                      maxWidth: 52,
+                      maxHeight: 52,
+                    ),
+                    child: Image.asset('assets/3images/3fav.png', fit: BoxFit.contain),
+                  ),
                   title: const Text('3x3x3', style: TextStyle(color: Color(0xFFE5E5E5)),),
                   subtitle: const Text('Speedcubing Guide - F2L, OLL and PLL', style: TextStyle(color: Color(0xFFE5E5E5)),),
                   trailing: const Icon(Icons.arrow_right_alt_rounded, color: Color(0xFFFCA311)),
