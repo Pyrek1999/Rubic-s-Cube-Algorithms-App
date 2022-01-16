@@ -21,6 +21,15 @@ class _ThreeBeginnersScreenState extends State<ThreeBeginnersScreen> {
               title: const Text('Notation', style: TextStyle(color: Color(0xFFE5E5E5)),),
               subtitle: const Text('Learn Rubic\u2032s Cube moves', style: TextStyle(color: Color(0xFFE5E5E5)),),
               trailing: const Icon(Icons.api, color: Color(0xFFFCA311),),
+              leading: ConstrainedBox(
+                constraints: const BoxConstraints(
+                  minWidth: 44,
+                  minHeight: 44,
+                  maxWidth: 44,
+                  maxHeight: 44,
+                ),
+                child: Image.asset('assets/3images/3beginner.png', fit: BoxFit.contain),
+              ),
               tileColor: const Color(0xFF14213D),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => const BasicMoves(),));
@@ -79,15 +88,44 @@ class BasicMoves extends StatefulWidget {
 }
 
 class _BasicMovesState extends State<BasicMoves> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Test Screen', style: TextStyle(fontSize: 20.0),),
       ),
-      body: const Center(
-        child: Text('TEST', style: TextStyle(fontSize: 72.0, color: Colors.amber,)),
-      ),
+      body: LayoutBuilder(
+        builder:  (BuildContext context, BoxConstraints viewportConstraints) {
+          return SingleChildScrollView(
+            child: ConstrainedBox(
+              constraints:
+                BoxConstraints(minHeight: viewportConstraints.maxHeight),
+              child: Column(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                    child: Image.asset('assets/3images/3beginner.png'),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+                    child: const Text('U R U\u2032', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 70.0)),
+                  ),
+                  Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Image.asset('assets/3images/3beginner.png', height: 200, width: 200,),
+                      ),
+                      Image.asset('assets/3images/3beginner.png', height: 200, width: 200,),
+                    ],
+                  ),
+                ]
+              ),
+            ),
+          );
+        },
+      )
     );
   }
 }
