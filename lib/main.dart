@@ -41,7 +41,15 @@ class MyHomePage extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(2.0, 3.0, 2.0, 1.0),
               child: Card(
                 child: ListTile(
-                  leading: const FlutterLogo(size: 56.0),
+                  leading: ConstrainedBox(
+                    constraints: const BoxConstraints(
+                      minWidth: 52,
+                      minHeight: 52,
+                      maxWidth: 52,
+                      maxHeight: 52,
+                    ),
+                    child: Image.asset('assets/2images/2fav.png', fit: BoxFit.contain),
+                  ),
                   title: const Text('2x2x2', style: TextStyle(color: Color(0xFFE5E5E5)),),
                   subtitle: const Text('Beginners tutorial', style: TextStyle(color: Color(0xFFE5E5E5)),),
                   trailing: const Icon(Icons.arrow_right_alt_rounded, color: Color(0xFFFCA311)),
@@ -56,7 +64,15 @@ class MyHomePage extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(2.0, 1.0, 2.0, 1.0),
               child: Card(
                 child: ListTile(
-                  leading: const FlutterLogo(size: 56.0),
+                  leading: ConstrainedBox(
+                    constraints: const BoxConstraints(
+                      minWidth: 52,
+                      minHeight: 52,
+                      maxWidth: 52,
+                      maxHeight: 52,
+                    ),
+                    child: Image.asset('assets/2images/2fav.png', fit: BoxFit.contain),
+                  ),
                   title: const Text('2x2x2', style: TextStyle(color: Color(0xFFE5E5E5)),),
                   subtitle: const Text('Ortega method', style: TextStyle(color: Color(0xFFE5E5E5)),),
                   trailing: const Icon(Icons.arrow_right_alt_rounded, color: Color(0xFFFCA311)),
