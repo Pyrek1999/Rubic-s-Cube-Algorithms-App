@@ -84,7 +84,7 @@ class _TwoOrientTopLayerState extends State<TwoOrientTopLayer> {
                     ),
                     const Padding(
                       padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 10.0),
-                      child: Text('', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                      child: Text('(R U R\u2032 U)(R U\u00b2\u2032 R\u2032)', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
                     ),
                     Container(
                       padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
@@ -92,7 +92,7 @@ class _TwoOrientTopLayerState extends State<TwoOrientTopLayer> {
                     ),
                     const Padding(
                       padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
-                      child: Text('', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                      child: Text('(R\u2032 U\u2032 R U\u2032)(R\u2032 U\u00b2 R)', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
                     ),
                     Container(
                       padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
@@ -100,7 +100,7 @@ class _TwoOrientTopLayerState extends State<TwoOrientTopLayer> {
                     ),
                     const Padding(
                       padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
-                      child: Text('', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                      child: Text('F (R U R\u2032 U\u2032)\n(R U R\u2032 U\u2032) F\u2032', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0), textAlign: TextAlign.center,),
                     ),
                     Container(
                       padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
@@ -108,7 +108,7 @@ class _TwoOrientTopLayerState extends State<TwoOrientTopLayer> {
                     ),
                     const Padding(
                       padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
-                      child: Text('', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                      child: Text('R\u00b2 U\u00b2 R U\u00b2 R\u00b2', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
                     ),
                     Container(
                       padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
@@ -116,7 +116,7 @@ class _TwoOrientTopLayerState extends State<TwoOrientTopLayer> {
                     ),
                     const Padding(
                       padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
-                      child: Text('', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                      child: Text('(R U R\u2032 U\u2032)(R\u2032 F)(R F\u2032)', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
                     ),
                     Container(
                       padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
@@ -124,7 +124,7 @@ class _TwoOrientTopLayerState extends State<TwoOrientTopLayer> {
                     ),
                     const Padding(
                       padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
-                      child: Text('', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                      child: Text('F (R U R U\u2032) F\u2032', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
                     ),
                     Container(
                       padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
@@ -132,7 +132,7 @@ class _TwoOrientTopLayerState extends State<TwoOrientTopLayer> {
                     ),
                     const Padding(
                       padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
-                      child: Text('', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
+                      child: Text('F\u2032 (R U R\u2032 U\u2032) R\u2032 F R', style: TextStyle(color: Color(0xffE5E5E5), fontSize: 50.0)),
                     ),
                   ],
                 ),
